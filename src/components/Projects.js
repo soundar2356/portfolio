@@ -1,30 +1,30 @@
 import websiteImg1 from '../assets/Youtube-clone.png'
-import websiteImg2 from '../assets/ecommerce-amazon-websites.png'
-import websiteImg3 from '../assets/website-blog.jpg'
-import websiteImg4 from '../assets/ecommerce-websites.jpg'
+import websiteImg2 from '../assets/amazon clone.jpg'
+import websiteImg3 from '../assets/hotel management.jpg'
+import websiteImg4 from '../assets/portfolio.png'
 export default function Projects(){
 
     const config = {
       projects:[
         {
            image : websiteImg1,
-           description : 'A static replica of the Youtube homepage built using HTML and CSS, showcasing my skills in Front-End development and design ',
-           link:'https://github.com/soundar2356/Youtube-Clone-Using-HTML-And-CSS.git'
+           description : 'A static replica of the Youtube homepage built using HTML and CSS',
+           link:' https://soundar2356.github.io/Youtube-Clone-Using-HTML-And-CSS/'
         },
         {
           image : websiteImg2,
-          description : 'A javascript based implementation of Amazon E-commerce website replica in dynamic that focus solely on Front-End development',
-          link:'https://github.com/soundar2356/amazon-clone-.git'
+          description : 'A javascript based implementation of Amazon E-commerce website replica',
+          link:'https://soundar2356.github.io/amazon-clone-static-website/'
        },
        {
         image : websiteImg3,
-        description : 'this are created by help of talewind css and react js',
-        link:''
+        description : 'A full stack application using Spring Boot and React-Js',
+        link:'https://github.com/soundar2356/LeeviHotel.git'
      },
      {
       image : websiteImg4,
-      description :'new des',
-      link :''
+      description :'A professional Portfolio Websites using React-Js',
+      link :' https://soundar2356.github.io/professional-portfolio/'
      }
       ]
     }
@@ -33,20 +33,20 @@ export default function Projects(){
     <div className="w-full">
       <div className="flex flex-col px-10 py-5">
         <h1 className='text-4xl  border-b-4 border-secondary mb-5 w-[150px] font-bold'>Projects</h1>
-        <p >These are my some of my project and i have build the projects using html,css and javascript</p>
+        <p >These are my some of my project </p>
       </div>
     </div>
     <div className="w-full">
-      <div className='flex flex-col md:flex-row px-10 gap-10'>
+      <div className='flex flex-col md:flex-row px-10 gap-20'>
           {config.projects.map((projects)=>( 
               <div className='relative'>
-                <img className = 'h-[150px] w-[300px]' src = {projects.image}/>
-                  <div className='project-desc'>
-                    <p className='text-center text-xs px-5 py-10'>{projects.description}</p>
-                      <div className='flex justify-center'>
-                        <a className='btn' target='_blank' href={projects.link}>View Project</a>
+                <img className = 'h-[200px] w-[350px]' src = {projects.image}/>
+                  <div className='project-desc h-[200px] w-[350px]'>
+                    <p className='text-center text-sm px-5 py-10'>{projects.description}</p>
                       </div>
-                  </div>
+                  <div className='flex justify-center '>
+                        <a className='btn mt-3' target='_blank' href={projects.link}>View Project</a>
+                      </div>
                 </div>
             ))}
        </div>

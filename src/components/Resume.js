@@ -4,7 +4,7 @@ export default function Resume(){
 
 
   const config = {
-    link:'www.meow.com'
+    link:'https://raw.githubusercontent.com/soundar2356/Resume/main/Soundrapandi_Resume.pdf'
   } 
 
   return<section className='flex flex-col md:flex-row bg-secondary px-5' id='resume'>
